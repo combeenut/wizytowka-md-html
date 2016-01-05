@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Site Title -->
+  <title>Terms</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Responsive HTML5 Theme in Material Design Style" />
+  <meta name="keywords" content="responsive html5 theme, ios, android, material design, landing, application, mobile, blog, portfolio, bootstrap 3, css, jquery, flat, modern" />
+  <meta name="author" content="8Guild" />
+
+  <!-- Mobile Specific Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="faviconnn.ico" type="image/x-icon">
+  <link rel="icon" href="faviconnn.ico" type="image/x-icon">
+
+  <!-- Theme Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <!-- Preloader (Pace.js) -->
+  <script src="js/plugins/pace.min.js"></script>
+
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr.custom.js"></script>
+  <script src="js/libs/detectizr.min.js"></script>
+
+</head>
+
+<!-- Body -->
+<!-- Remove '.fixed-footer' from body to disable fixed footer reveal on scroll -->
+<body class="fixed-footer">
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="logo">
+    <img src="img/logo-large.png" alt="MyDarlink">
+    <span>MyDarlink</span>
+  </div>
+</div>
+
+<!-- Fake scrollbar (when open popups/modals) -->
+<div class="fake-scrollbar"></div>
+
+<!-- Off-canvas Navigation -->
+<div class="offcanvas-nav">
+  <!-- Head (Fixed Part) -->
+  <div class="nav-head">
+    <div class="top-bar">
+      <form class="search-box">
+        <span class="search-toggle waves-effect waves-light"></span>
+        <input type="text" id="search-field">
+        <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
+      </form>
+      <div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>
+      <div class="social-buttons">
+        <a href="https://www.facebook.com/mydarlinkapp/?ref=profile" class="sb-facebook"><i class="bi-facebook"></i></a>
+        <a href="https://twitter.com/MDLtwet" class="sb-twitter"><i class="bi-twitter"></i></a>
+      </div>
+    </div>
+    <a href="#" class="offcanvas-logo scrollup">
+      <div class="icon"><img src="img/logo-white.png" alt="Appica 2"></div>
+      <div class="title">
+        MyDarlink
+        <span></span>
+      </div>
+    </a>
+    <a href="#" class="light-color nav-link">Sign In</a>
+  </div>
+  <!-- Body (Scroll Part) -->
+  <div class="nav-body">
+    <div class="overflow">
+      <div class="inner">
+        <!-- Navigation -->
+        <nav class="nav-link">
+          <ul class="pages">
+            <li><a href="terms.html">TERMS</a></li>
+            <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div><!-- Off-canvas Navigation End -->
+
+<!--Modal (Signin/Signup Page)-->
+<div class="modal fade" id="signin-page">
+  <div class="modal-dialog">
+    <div class="modal-form">
+      <div class="tab-content">
+        <!-- Sign in form -->
+        <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+          <h3 class="modal-title">Sign In</h3>
+          <div class="form-control space-top-2x">
+            <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
+            <label for="si_email">Email</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <div class="form-control">
+            <input type="password" name="si-password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
+            <label for="si-password">Password</label>
+            <a class="helper-link" href="#">Forgot password?</a>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <label class="checkbox space-top-2x">
+            <input type="checkbox"> Remember me
+          </label>
+          <div class="clearfix modal-buttons">
+            <div class="pull-right">
+              <button type="button" class="btn btn-flat btn-default waves-effect" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-flat btn-primary waves-effect waves-primary">Sign In</button>
+            </div>
+            <!-- Switching forms (Fake nav tab) -->
+            <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-1">Sign Up</a></div>
+          </div>
+        </form>
+
+        <!-- Sign up form -->
+        <form class="tab-pane transition scale fade" id="signup-form">
+          <h3 class="modal-title">Sign Up</h3>
+          <div class="form-control space-top-2x">
+            <input type="email" name="su-email" id="su-email" required>
+            <label for="su-email">Email</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <div class="form-control">
+            <input type="password" name="su-password" id="su-password" required>
+            <label for="su-password">Password</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <div class="form-control">
+            <input type="password" name="su-password-repeat" id="su-password-repeat" required>
+            <label for="su-password-repeat">Repeat password</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <label class="checkbox space-top-2x">
+            <input type="checkbox"> Subscribe for our news
+          </label>
+          <div class="clearfix modal-buttons">
+            <div class="pull-right">
+              <button type="button" class="btn btn-flat btn-default waves-effect" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-flat btn-primary waves-effect waves-primary">Sign Up</button>
+            </div>
+            <!-- Switching forms (Fake nav tab) -->
+            <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-2">Sign In</a></div>
+          </div>
+        </form>
+      </div>
+      <!-- Hidden real nav tabs -->
+      <ul class="nav-tabs hidden">
+        <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+        <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+      </ul>
+    </div>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- Navbar -->
+  <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
+  <header class="navbar navbar-fixed-top">
+    <div class="container">
+      <!-- Nav Toggle -->
+      <div class="nav-toggle waves-effect waves-light waves-circle" data-offcanvas="open"><i class="flaticon-menu55"></i></div>
+      <!-- Logo -->
+      <a href="#" class="logo scrollup">
+        <img src="img/logo-white.png" alt="MyDarlink">
+      </a>
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <a href="#" class="action-btn">Sign in</a>
+        <!-- Social Buttons -->
+        <div class="social-buttons text-right">
+          <a href="https://www.facebook.com/mydarlinkapp/?ref=profile" class="sb-facebook"><i class="bi-facebook"></i></a>
+          <a href="https://twitter.com/MDLtwet" class="sb-twitter"><i class="bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </header><!-- Navbar End -->
+    
+    <!-- Page Title -->
+    <section class="container">
+      <h1 style="max-width: 770px;">Terms of use on rendering electronic services</h1>
+    </section>
+
+    <!-- Legal Notice -->
+    <section class="space-top-2x padding-bottom-2x" style="padding-top: 0px;">
+      <hr>
+      <div class="container">
+        <div class="row space-top-3x">
+          <div class="col-lg-6 col-lg-offset-3 col-md-7 col-md-offset-2 col-sm-9">
+            <dl class="space-top-2x">
+              <dt><span>1</span>General provisions</dt>
+              <dd>1.1. On the basis of art. 8 paragraph 1 point 1 of the law from 18 July 2002 on Rendering
+                Electronic Services (Journal of Laws no 144, item 1204 with amendments) [company’s name] limited
+                liability company with its registered office in [city of the office] (hereunder referred to as
+                “Provider”) establishes these Terms of Use governing the provision of rendering electronic services
+                (hereunder referred to as “Terms of Use”) and undertakes to comply with them.<br><br>
+                1.2. Terms of Use define types, scope and terms of rendering electronic services by the Provider
+                via the Application, terms regarding concluding and terminating agreements on rendering such services,
+                and complaint procedures.<br><br>
+                1.3. The Application’s User, who wants to use the Services provided by the Application, has to
+                accept the Terms of Use and conclude an Agreement and agree to comply with rules included therein.
+                Each User, from the moment of taking actions, mentioned above, is obliged to comply with provisions
+                herein.
+              </dd>
+              <dt><span>2</span>Definitions</dt>
+              <p>Terms used in the Terms of Use:</p>
+              <dd>
+                <ol style="list-style-type: lower-alpha;">
+                  <li>User’s Account – toolbar used to save, store, browse and manage User’s content made available after registration and log-in.</li>
+                  <li>Link – link to the Internet website or other document made available on the Internet.</li>
+                  <li>Privacy Policy – rules concerning gathering and using personal data in the Application, specified in a separate document.</li>
+                  <li>Social networks – Internet networks being social networks available at, e.g. PLUS.GOOGLE.COM, WWW.FACEBOOK.COM and TWITTER.COM, etc.</li>
+                  <li>Undesirable contents – contents referred to in paragraph 6.3. herein.</li>
+                  <li>Agreement – agreement concluded between Provider and User on rendering electronic services, which content constitutes provisions herein.</li>
+                  <li>Services – any services rendered by the Provider for the User via the Site, described in detail in paragraph 3.1. herein.</li>
+                  <li>Provider – [company’s name] limited liability company with its registered office [city of the
+                    office], [address: street, postal code, city], registered in the District Court for [name of the
+                    registration court], [division number][division name] under National Court Register number
+                    [National Court Register number], Tax Id Number [Tax Id Number], REGON [REGON number], share
+                    capital [amount of share capital] PLN, fully paid-up.</li>
+                  <li>User – a person who is a user of Services rendered via the Appliacation.</li>
+                  <li>Application – IT application created by the Provider, available at MYDARLINK.COM and WWW.MYDARLINK.PL</li>
+                  <li>Terms of Use – these Terms of Use on rendering electronic services.</li>
+                </ol>
+              </dd>
+              <dt><span>3</span>Services</dt>
+              <dd>3.1. Provider renders, for the User via the Application, the following services:<br><br>
+                storage of Links within the User Account, including the way which enables sharing chosen Links with other Users,
+                <br><br>
+                <ol>
+                  <li>Link categorisation and grouping,</li>
+                  <li>sending Links and enable other Users to familiarise with them, as well as sharing them on other networks,</li>
+                  <li>search of Links in the Application,</li>
+                  <li>filtering of Links,</li>
+                  <li>change the way Links are shown in the Application,</li>
+                  <li>commenting on Links,</li>
+                  <li>having conversation through the exchange of information in the Application with other Users logged in,</li>
+                  <li>sharing created Link groups and categories with other Users in a chosen manner, which may include
+                    browsing through the Links gathered in a shared category or their edition and deleting them,</li>
+                  <li>monitoring the public activity of other Users in the Application,</li>
+                  <li>configuration of the link’s description, title, tags and pictures added to their own private
+                    resources and during the publication of the link,</li>
+                  <li>inviting new Users within the limit – no more than three Users per day.</li>
+                </ol>
+                <br><br>
+                3.2. Service use is free of charge.
+              </dd>
+              <dt><span>4</span>Technical requirements</dt>
+              <dd>4.1. For the proper usage of Services, apart from the access to the Internet, it is necessary to have web browser using Cookies.<br><br>
+                4.2. Provider undertakes to provide the best possible quality of Services, however is not responsible
+                for any interruption and disruption caused by the force majeure or the third party’s unauthorised action.<br><br>
+                4.3. Provider is not responsible for the lack of access to the Services resulting from reasons beyond
+                their control. Provider reserves the right to a short technical break in the Application functioning
+                in case of planned technical works, in particular concerning Application modernisation and update.
+              </dd>
+              <dt><span>5</span>Concluding and terminating the agreement</dt>
+              <dd>5.1. By registering in the Application and accepting the Terms of Use, the User concludes an
+                Agreement on rendering electronic services with the Provider, which content is stipulated in the
+                provisions herein (“Agreement”).<br><br>
+                5.1.1. Registration in the Application is possible only when receiving an invitation from other
+                registered User via email. The invitation contains a link enabling the access to the registration form.<br><br>
+                5.1.2. During registration the User provides their email address, and chooses unique login and password.
+                Given email address should relate to a current, active and correctly configured mail box, to which
+                the registering User has the access.<br><br>
+                5.1.3. To finish the registration process one has to click on the activation link
+                send to the User to given email address.<br><br>
+                5.2. Agreement is concluded for an unlimited duration.<br><br>
+                5.3. Provider may at any time terminate the Agreement, removing the User’s Account, even without
+                prior notice, in particular in case of violation of the law or provisions herein.<br><br>
+                5.4. User may terminate the Agreement at any time without giving reasons for that, by removing the User’s Account.<br><br>
+                5.5. To remove the User’s Account one has to choose item “remove the account” in menu ”settings”, and
+                then confirm such action by entering one’s current password to the Application. After these actions the
+                Application sends automatic message to the email address provided by the User during the registration
+                process, which includes a link. Clicking on the link finishes the User’s Account removing procedure.
+              </dd>
+              <dt><span>6</span>Terms and conditions of Service usage.</dt>
+              <dd>6.1. In order to start using the Services, one has to register and log in to the Application.
+              <br><br>
+              6.2. User logs into the network by providing their data, used during the registration process.
+              <br><br>
+              6.3. User is obliged to refrain from storing, publishing, sharing with other persons via the
+              Application, or any other usage of the Application in relation to the Links and resources, to
+              which they lead, comments, pictures and any other content which:
+              <br><br>
+              <ol style="list-style-type: lower-alpha;">
+                <li>violates the law, in particular by incitement to hatred based on national, racial, ethnic,
+                  religious grounds, or on irreligious ground, aiming at insulting, defamation or slander of particular
+                  persons, groups or institutions, promoting Nazism, fascism and communism methods and practices, contain
+                  propositions concerning trafficking of human organs, or other items excluded from the market, violating
+                  copyrights and other rights of the third party,</li>
+                <li>incites to hatred, lead to insulting, defamation, slander or discrimination of other groups than
+                  those mentioned in point a) of this paragraph, in particular based on sex, age, disability, nationality,
+                  political views or sexual orientation,</li>
+                <li>is to mislead, deceive, dispose one’s possessions in a disadvantageous manner, allows such actions,
+                  facilitates or incites them,</li>
+                <li>contains harmful or undesirable software, facilitates or leads to infecting by such software, or by
+                  other means is risky for the Provider’s safety and other Application Users and devices used by them,</li>
+                <li>leads to excessive overload of the Application infrastructure or disrupt its proper functioning,
+                  gathers information about other Users without their permission in any manner, leads to or facilitates
+                  to bypass security of the Application, or making any unauthorised modifications or changes in its
+                  source code or content published by other Users,</li>
+                <li>is of pornographic nature, or is unequivocally obscene or vulgar,</li>
+                <li>violates copyrights, personal rights or rights concerning trademarks,</li>
+                <li>violates provisions of these Terms of Use in any other way (“Undesirable Contents”).</li>
+              </ol>
+                <br><br>
+                6.4. Provider is authorised to permanent or random control of published Links and resources, by the User,
+                which links lead to comments, pictures and any other content. In case of detection of Undesirable Contents,
+                the Provider is authorised, at their discretion to:
+                <ol>
+                  <li>warn the User and demand removal of Undesirable Contents under the pain of applying more stringent measures,</li>
+                  <li>self-removal of Undesirable Contents with or without notifying the User,</li>
+                  <li>remove the User’s Account and immediate termination of the Agreement,</li>
+                  <li>remove the User’s Account, notify appropriate authorities, and providing them with any desirable
+                    information, content and materials, to the extent and in the manner in accordance with the
+                    relevant law.</li>
+                </ol>
+                <br><br>
+                6.5. Provider’s decision concerning measures mentioned above does not require justification, is final and shall not be appealable.
+                <br><br>
+                6.6. Provider should use their best endeavours to react in time on any Undesirable Contents appearing in the Application, and undertakes not to provide such content independently. However, the Provider, excluding cases of their intentional fault, is not responsible for any content posted to the Application, in particular Links and resources, to which these Links lead, comments and any other contents posted by the Users, and consequences of using them in any manner.
+                <br><br>
+                6.7. Every person is authorised to report, by choosing the right option in settings that given contents posted in the Application are Undesirable Contents, or constitute violation of this person’s rights or third party’s rights. Provider immediately analyses, not later than within 7 days, any this kind of reports and undertakes appropriate measures which are listed in paragraph 6.4. of this article. Provider is neither obliged to inform the User, who reported about taken actions, or the lack of it, nor justify them.
+                <br><br>
+                6.8. Reporting violation of copyrights
+                <br><br>
+                Violation of copyrights takes place when one uses the work beyond the scope of its usage without obtaining required permission. Author, whose economic rights has been violated or threatened, is entitled to the claim for abandonment of such an action. In case when such violation has taken place, the author has the right to claim for restitution, meaning the removal of violation effects by the doer. In case of unlawful usage of the intellectual property, one has to report such violation by sending an email to the address [address]. The message should include information about the entity, whose rights were violated, and the manner of violation.
+                <br><br>
+                6.9. Children’s Privacy
+                <br><br>
+                Provider is committed to protect the privacy of children. We encourage parents and guardians to take an active role in their children’s online activities and interests. The Provider does not intentionally collect information from minors, and the Provider does not target their web site to children.
+                <br><br>
+                6.10. Links to third party web sites
+                <br><br>
+                The Application provides links to third party web sites. If one accesses those links, they will leave the Application. Provider does not control those third party web sites and cannot represent that their policies and practices will be consistent with the Application’s Privacy Policy and with these Terms of Use. In particular, third part web sites may collect or use personal information about the User in a manner different from that described in the Privacy Policy. Provider recommends caution in using third part web sites and encourages to review their privacy policy.
+              </dd>
+              <dt><span>7</span>Privacy</dt>
+              <dd>7.1. The User may decide about the privacy of gathered Links by placing them in User’s Account
+                proper areas. By placing Links in the public area of the User’s Account, the User agrees to familiarise
+                other Application’s Users with them. Third party access to the User’s Account private area, except the
+                Provider themselves or persons acting on their behalf, is closed, unless the Provider decides otherwise
+                in relation to the whole or part of the private area.<br><br>
+                7.2. Provider uses their best endeavours to keep the information stored by the User in the User’s
+                Account private area, classified. With the exclusion of cases of intentional fault, Provider is not
+                responsible for their disclosure to the third party, in case of accident, or intentional actions of
+                other entities, aiming at them.<br><br>
+                7.3. In case when data left by the User in the Application shall represent personal data pursuant
+                to the law from 29 August 1997 on The Personal Data Protection Act, the User, using the Application
+                agrees to process the data within the range necessary to use the Application.<br><br>
+                7.4. The User may agree to use their data also for the marketing and advertising purposes by selecting appropriate option in the Application.<br><br>
+                7.5. Personal data administrator is [company’s name] limited liability company with its registered office
+                in [city of the office], [address: street, postal code, city], registered in the District Court for [name of the
+                registration court], [division number][division name] under National Court Register number [National Court Register number].<br><br>
+                7.6. Providing personal data is voluntary. User has the right to access this data, correct and complete them.
+              </dd>
+              <dt><span>8</span>Complaint</dt>
+              <dd>8.1. User has the right to complaint in cases concerning the Services.<br><br>
+                8.2. Complaint should be delivered by way of sending the user’s login and description of the problem
+                being the basis of the complaint to the email address [email address]. Complaints lacking this data
+                shall not be handled.
+                <br><br>
+                8.3. Provider shall handle the complaint within 14 days from the date of its receipt. About the result
+                of the complaint handling Provider informs by sending an email to the address the report was sent from,
+                or other indicated by the User in the report content.
+              </dd>
+              <dt><span>9</span>Responsibility</dt>
+              <dd>
+                9.1. Provider has the right to block the access to the Application or its part from important reasons at any time, and especially when an irregularity in using the Application is found, including cases which could be exposed to damage the Provider or the User. Provider is not responsible for permanent or temporary suspension of the Application accessibility, caused by factors beyond the Provider’s control.
+                <br><br>
+                9.2. Provider is not responsible for the validity, accuracy, completeness of information provided in the Application, and also for its usefulness for any purpose of the User.
+                <br><br>
+                9.3. Provider does not warrant or undertake that use of the Application will be flawless, free of defects or uninterrupted, and that the content in the Application will meet the User’s expectations concerning substantial content, accuracy or usefulness.
+              </dd>
+              <dt><span>10</span>Final provisions</dt>
+              <dd>10.1. Provider is authorised to change the content of the Terms of Use. The information about the changes in the Terms of Use will be placed in a visible place in the Application for the User to see, and the User will also be informed about this fact via email. The message will be sent to the address entered during the registration process, not later than 14 days before the change becomes effective. The User who does not accept the introduced changes of the Terms of Use should remove the User’s Account.
+                <br><br>
+                10.2. In matters not regulated herein appropriate legal provisions of the Polish law apply.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section><!-- Legal Notice End -->
+
+<!-- Footer -->
+<footer class="footer padding-top-3x">
+  <div class="container space-top">
+    <div class="body padding-top-2x">
+      <!-- Copyright -->
+      <div class="column copyright">
+        <p>2016 &copy; <a href="http://mydarlink.com" target="_blank">MyDarlink</a>.</p>
+      </div>
+      <!-- Gadget (Middle Column) -->
+      <div class="column hidden-sm hidden-xs">
+        <div class="gadget">
+          <img src="img/footer/telefon-start.png" alt="Screen">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><!-- Footer End -->
+
+  <!-- Javascript (jQuery) Libraries and Plugins -->
+  <script src="js/libs/jquery-2.1.3.min.js"></script>
+  <script src="js/libs/jquery.easing.1.3.js"></script>
+  <script src="js/plugins/velocity.min.js"></script>
+  <script src="js/plugins/bootstrap.min.js"></script>
+  <script src="js/plugins/smoothscroll.js"></script>
+  <script src="js/plugins/waves.min.js"></script>
+  <script src="js/plugins/form-plugins.js"></script>
+  <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+  <script src="js/plugins/isotope.pkgd.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- Body End-->
+</html>

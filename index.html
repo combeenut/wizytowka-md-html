@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Site Title -->
+    <title>MyDarlink</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Responsive HTML5 Theme in Material Design Style" />
+    <meta name="keywords" content="responsive html5 theme, ios, android, material design, landing, application, mobile, blog, portfolio, bootstrap 3, css, jquery, flat, modern" />
+    <meta name="author" content="8Guild" />
+
+    <!-- Mobile Specific Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="faviconnn.ico" type="image/x-icon">
+    <link rel="icon" href="faviconnn.ico" type="image/x-icon">
+
+    <!-- Theme Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Preloader (Pace.js) -->
+    <script src="js/plugins/pace.min.js"></script>
+
+    <!-- Modernizr -->
+		<script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/detectizr.min.js"></script>
+    
+  </head>
+  
+  <!-- Body -->
+  <!-- Remove '.fixed-footer' from body to disable fixed footer reveal on scroll -->
+  <body class="fixed-footer">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="logo">
+        <img src="img/logo-large.png" alt="MyDarlink">
+        <span>MyDarlink</span>
+      </div>
+    </div>
+
+    <!-- Fake scrollbar (when open popups/modals) -->
+    <div class="fake-scrollbar"></div>
+
+    <!-- Off-canvas Navigation -->
+    <div class="offcanvas-nav">
+      <!-- Head (Fixed Part) -->
+      <div class="nav-head">
+        <div class="top-bar">
+          <form class="search-box">
+            <span class="search-toggle waves-effect waves-light"></span>
+            <input type="text" id="search-field">
+            <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
+          </form>
+          <div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>
+          <div class="social-buttons">
+            <a href="https://www.facebook.com/mydarlinkapp/?ref=profile" class="sb-facebook"><i class="bi-facebook"></i></a>
+            <a href="https://twitter.com/MDLtwet" class="sb-twitter"><i class="bi-twitter"></i></a>
+          </div>
+        </div>
+        <a href="#" class="offcanvas-logo scrollup">
+          <div class="icon"><img src="img/logo-white.png" alt="Appica 2"></div>
+          <div class="title">
+            MyDarlink
+            <span></span>
+          </div>
+        </a>
+        <a href="#" class="light-color nav-link">Sign In</a>
+      </div>
+      <!-- Body (Scroll Part) -->
+      <div class="nav-body">
+        <div class="overflow">
+          <div class="inner">
+            <!-- Navigation -->
+            <nav class="nav-link">
+              <ul class="pages">
+                <li><a href="terms.html">TERMS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div><!-- Off-canvas Navigation End -->
+
+    <!--Modal (Signin/Signup Page)-->
+    <div class="modal fade" id="signin-page">
+      <div class="modal-dialog">
+        <div class="modal-form">
+          <div class="tab-content">
+            <h3>Please add your <strong>e-mail</strong></h3>
+            <p>in order to receive access to test drive of MyDarlink</p>
+
+            <!-- Sign up form -->
+            <form method="post" class="ajax-form space-top space-bottom">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-control">
+                    <input type="text" name="name" id="cont_form_name">
+                    <label for="cont_form_name">Name</label>
+                    <span class="error-label"></span>
+                    <span class="valid-label"></span>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-control">
+                    <input type="email" name="email" id="cont_form_email">
+                    <label for="cont_form_email">Email</label>
+                    <span class="error-label"></span>
+                    <span class="valid-label"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-control">
+                <textarea name="message" id="cont_form_message"></textarea>
+                <label for="cont_form_message">Message</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="row space-top">
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-lg-6 col-lg-offset-6 col-md-8 col-md-offset-4 col-sm-12">
+                      <button type="submit" class="btn btn-default btn-float waves-effect">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Validation Response -->
+              <div class="response-holder"></div>
+            </form>
+          </div>
+          <!-- Hidden real nav tabs -->
+          <ul class="nav-tabs hidden">
+            <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+            <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+          </ul>
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Intro Section -->
+    <section class="intro" style="background-image: url(img/intro/intro-bg.png);">
+      <div class="container">
+        <div class="column-wrap">
+
+          <!-- Left Column -->
+          <div class="column c-left">
+            <!-- Navi -->
+            <div class="navi">
+              <div class="nav-toggle nav-toggle-float" data-offcanvas="open">
+                <span class="waves-effect waves-light">
+                  <i class="flaticon-menu55"></i>
+                </span>
+              </div>
+            </div>
+            <!-- Scroll for More Button -->
+            <a href="#features" class="scroll-more scroll" data-offset-top="-5">
+              <i class="icon"></i>
+              <span>Scroll for more</span>
+            </a>
+          </div>
+
+          <!-- Middle Column-->
+          <div class="column c-middle">
+            <h1 class="logo">
+              <img src="img/logo-md.png" alt="Appica 2">
+              <span>Links that you hold dearly!</span>
+            </h1>
+            <div class="phone">
+              <img src="img/intro/screen.png" alt="App Screen">
+            </div>
+          </div>
+
+          <!-- Right Column-->
+          <div class="column c-right">
+            <!-- Social Buttons -->
+            <div class="social-buttons text-right">
+              <a href="https://www.facebook.com/mydarlinkapp/?ref=profile" class="sb-facebook"><i class="bi-facebook"></i></a>
+              <a href="https://twitter.com/MDLtwet" class="sb-twitter"><i class="bi-twitter"></i></a>
+            </div>
+            <!-- Features -->
+            <div class="intro-features">
+              <div class="icon-block icon-block-horizontal box-float" data-transition-delay="100">
+                <div class="icon va-middle"><i class="icon-ikonka_kategorii"></i></div>
+                <div class="text">
+                  <h3>Collect what you love</h3>
+                  <p>build your own library with the most valuable content from the internet</p>
+                </div>
+              </div>
+              <div class="icon-block icon-block-horizontal box-float" data-transition-delay="300">
+                <div class="icon va-middle"><i class="icon-public"></i></div>
+                <div class="text">
+                  <h3>Publish and gain followers</h3>
+                  <p>get others to review and support your profile</p>
+                </div>
+              </div>
+              <div class="icon-block icon-block-horizontal box-float" data-transition-delay="500">
+                <div class="icon va-middle"><i class="icon-heart"></i></div>
+                <div class="text">
+                  <h3>Track the most attractive</h3>
+                  <p>search, follow and promote the most interesting profiles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Intro Section End -->
+
+    <!-- Content Wrap -->
+    <div class="content-wrap">
+
+      <!-- Navbar -->
+      <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
+      <header class="navbar navbar-sticky">
+        <div class="container">
+          <!-- Nav Toggle -->
+          <div class="nav-toggle waves-effect waves-light waves-circle" data-offcanvas="open"><i class="flaticon-menu55"></i></div>
+          <!-- Logo -->
+          <a href="#" class="logo scrollup">
+            <img src="img/logo-white.png" alt="MyDarlink">
+          </a>
+          <!-- Toolbar -->
+          <div class="toolbar">
+            <a href="#" class="action-btn">Sign in</a>
+            <!-- Social Buttons -->
+            <div class="social-buttons text-right">
+              <a href="https://www.facebook.com/mydarlinkapp/?ref=profile" class="sb-facebook"><i class="bi-facebook"></i></a>
+              <a href="https://twitter.com/MDLtwet" class="sb-twitter"><i class="bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </header><!-- Navbar End -->
+
+      <!-- Features -->
+      <section class="fw-bg bg-align-bottom" style="background-image: url(img/circles-25.jpg);" id="features">
+
+        <!-- Feature Tabs -->
+        <div class="feature-tabs">
+          <!-- Heading when columns stack -->
+          <div class="block-heading visible-when-stack">
+            <h2>Why MyDarlink?</h2>
+            <span>Advantages you’re getting:</span>
+          </div>
+          <div class="clearfix">
+            <!-- Devices -->
+            <div class="devices">
+              <div class="tablet">
+                <img src="img/features/tablet.png" alt="Tablet">
+                <img class="reflection" src="img/features/tablet-reflection.png" alt="Reflection">
+                <div class="mask">
+                  <ul class="screens">
+                    <li class="active in" id="ts01"><img src="img/features/tablet/tablet_1.png" alt="Screen 01"></li>
+                    <li id="ts02"><img src="img/features/tablet/tablet_2.png" alt="Screen 02"></li>
+                    <li id="ts03"><img src="img/features/tablet/tablet_3.png" alt="Screen 03"></li>
+                    <li id="ts04"><img src="img/features/tablet/tablet_4.png" alt="Screen 04"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phone">
+                <img src="img/features/iphone.png" alt="iPhone">
+                <div class="mask">
+                  <ul class="screens">
+                    <li class="active in" id="ps01"><img src="img/features/phone/telefon.png" alt="Screen 01"></li>
+                    <li id="ps02"><img src="img/features/phone/telefon2.png" alt="Screen 02"></li>
+                    <li id="ps03"><img src="img/features/phone/telefon4.png" alt="Screen 03"></li>
+                    <li id="ps04"><img src="img/features/phone/telefon3.png" alt="Screen 04"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs -->
+            <div class="tabs text-center">
+              <div class="block-heading hidden-when-stack">
+                <h2>Why MyDarlink?</h2>
+                <span>Advantages you’re getting:</span>
+              </div>
+              <!-- Nav Tabs -->
+              <!-- Remove data-autoswitch="true" to disable automatic tabs change. -->
+              <ul class="nav-tabs" data-autoswitch="true" data-interval="3000">
+                <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="icon-ico-play"></i></a></li>
+                <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="icon-ico-zebatka"></i></a></li>
+                <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="icon-ico-share"></i></a></li>
+                <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="icon-comment"></i></a></li>
+              </ul>
+              <!-- Tab panes -->
+              <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
+              <div class="tab-content">
+                <div class="tab-pane transition scale fade in active" id="video-player">
+                  <h3>Play videos and read articles at the same time</h3>
+                  <p>Here you can watch your favourite videos and read interesting content without switching the tab.</p>
+                </div>
+                <div class="tab-pane transition scale fade" id="settings">
+                  <h3>Setup your privacy</h3>
+                  <p>MDL gives you many options to set your privacy in the public space. You get to decide who can see your links and how visible you are.</p>
+                </div>
+                <div class="tab-pane transition scale fade" id="file-sharing">
+                  <h3>Publish your links</h3>
+                  <p>You can make your links available to others with just one click.</p>
+                </div>
+                <div class="tab-pane transition scale fade" id="chat">
+                  <h3>Comment and discuss links</h3>
+                  <p>MDL provides a simple way to chat, making it easy for you to discuss with others directly in the links’ window.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="with-shadow">
+
+        <!-- Icon + Text + Link -->
+        <div class="container padding-bottom-2x">
+          <!-- Content -->
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- Icon block are very flexible. If you remove '.icon-block-horizontal' you'll get stacked version. There is als modofier classes for icon like '.icon-bigger', '.va-middle' for vertical alignment. -->
+                  <div class="icon-block icon-block-horizontal">
+                    <div class="text text-right">
+                      <h3>Delta</h3>
+                      <p>Hub between PRIVATE and STREAM. Place where you create your public profile.</p>
+                    </div>
+                    <div class="icon icon-bigger va-middle"><i class="icon-delta"></i></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="icon-block icon-block-horizontal">
+                    <div class="icon icon-bigger va-middle"><i class="icon-private"></i></div>
+                    <div class="text">
+                      <h3>Private</h3>
+                      <p>Your private space, where you can store your own links.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="icon-block icon-block-horizontal">
+                    <div class="text text-right">
+                      <h3>Stream</h3>
+                      <p>Storage of all links published by MyDarlink users.</p>
+                    </div>
+                    <div class="icon icon-bigger va-middle"><i class="icon-y"></i></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="icon-block icon-block-horizontal">
+                    <div class="icon icon-bigger va-middle"><i class="icon-ikonka_kategorii"></i></div>
+                    <div class="text">
+                      <h3>Categories</h3>
+                      <p>Categories which you set in your PRIVATE space or which we proposed in STREAM.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Features End -->
+
+      <!-- App Story (Prototyping) -->
+      <!-- 2 required modifier classe available '.img-left' and '.img-right'-->
+      <section class="split-block img-left" id="app-story">
+        <div class="column">
+          <img src="img/prototype.png" alt="Prototyping">
+        </div>
+        <div class="column">
+          <div class="block-heading">
+            <h2>Why beta version?</h2>
+          </div>
+          <p>MyDarlink has just arrived to the Internet world.  To provide reliable and free tool we still need
+            to analyse our codes within the closed group of confidential users. Join us and participate in the process
+            of creating the most satisfying tool.</p>
+        </div>
+      </section><!-- App Story End -->
+
+      <!-- Press Reviews -->
+      <section class="space-top" id="reviews">
+        <hr>
+        <div class="container padding-bottom">
+          <!-- Reviews -->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/responsive-design.png" alt="New Odessa Times">
+                <h3>Responsive Design</h3>
+                <p>MyDarlink is available on all possible devices. You get the application that
+                  recognizes your device and provides you the most ergonomic pattern for your screen.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/share.png" alt="Navigator">
+                <h3>Share</h3>
+                <p>Share you links within MyDarlink users and on others by email or on social platforms – Facebook, Twitter, Google +.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/multilingual.png" alt="Appicavillage">
+                <h3>Multilingual</h3>
+                <p>Currently MyDarlink is published as Beta version and is only available in English. It will be multilingual to let you set the most convenient language.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/personalize-your-profile.png" alt="Tap-Tap Time">
+                <h3>Personalize your profile</h3>
+                <p>Set your privacy, create your own public profile and modify the look of our interface.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/settings.png" alt="iCaravely">
+                <h3>Analytic tools</h3>
+                <p>We constantly develop analytic algorithms tracing move on MyDarlink profile to display links, in order that matches your interests.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/analytic-tools.png" alt="MooDesign">
+                <h3>Intelligent ads.</h3>
+                <p>We want to ensure our users, that they won’t be disturbed by unwanted ads using MyDarlink . Section “for me” is for adverts selected especially for you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Press Reviews End -->
+
+      <!-- Web Application -->
+      <section class="fw-bg bottom-shadow padding-top-3x padding-bottom-2x" style="background-color: #f3642e;" id="web-app">
+        <div class="container light-color">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="block-heading text-right">
+                <h2>Access to MDL beta version</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row space-top-2x">
+            <div class="col-md-5">
+              <div class="icon-block icon-block-horizontal">
+                <div class="icon hidden-xs"><i class="icon-private"></i></div>
+                <div class="text">
+                  <h3>How to access beta version</h3>
+                  <p>To get access to MDL’s beta version click on the button below and write to use.
+                    Together we can develop the most advanced system for links management. Your feedback
+                    will help to improve functionality of MDL. Send us your e-mail address with a note
+                    that you want to be a part of this project. Make this happen, so everyone can have
+                    free access to a much more comfortable internet.</p>
+                  <a href="#"  data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="btn btn-float btn-lg waves-effect button-log-in">LOG IN</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <img src="img/webapp/macbook.png" alt="Web App">
+            </div>
+          </div>
+        </div>
+      </section><!-- Web Application End -->
+
+    </div><!-- Content Wrap End -->
+
+    <!-- Footer -->
+    <footer class="footer padding-top-3x">
+      <div class="container space-top">
+        <div class="body padding-top-2x">
+          <!-- Copyright -->
+          <div class="column copyright">
+            <p>2016 &copy; <a href="http://mydarlink.com" target="_blank">MyDarlink</a>.</p>
+          </div>
+          <!-- Gadget (Middle Column) -->
+          <div class="column hidden-sm hidden-xs">
+            <div class="gadget">
+              <img src="img/footer/telefon-start.png" alt="Screen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+    
+    <!-- Javascript (jQuery) Libraries and Plugins -->
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+    <script src="mailer/mailer.js"></script>
+    <script src="js/plugins/velocity.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/waves.min.js"></script>
+    <script src="js/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/plugins/form-plugins.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71123801-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body><!-- Body End-->
+</html>
